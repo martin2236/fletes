@@ -1,0 +1,75 @@
+a{
+    color: #fff !important;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color:  #65a4dc;
+  }
+  
+  .navbar__logo a {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .navbar__img{
+    border-radius: 5px;
+    margin-top: 25px;
+    height: 50px;
+    width: 70px;
+  }
+  .navbar__menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  /* Icono de menú en versión móvil */
+  .navbar__mobile-menu {
+    display: none;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  /* Media query para dispositivos móviles */
+  @media (max-width: 768px) {
+    .navbar {
+      padding: 0 10px;
+    }
+  
+    .navbar__menu {
+      display: none;
+      flex-direction: column;
+      background-color:  #65a4dc;
+      position: absolute;
+      top: 64px;
+      left: 0;
+      width: 100%;
+      z-index: 1;
+    }
+  
+    .navbar__menu.collapsed {
+      display: flex;
+    }
+  
+    .navbar__menu a {
+      padding: 10px 20px;
+      color: #65a4dc;
+      text-align: center;
+    }
+  
+    .navbar__mobile-menu {
+      display: block;
+    }
+  
+    /* Ajuste para ocultar el menú normal en dispositivos móviles */
+    .navbar__menu:not(.collapsed) {
+      display: none;
+    }
+  }
