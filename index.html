@@ -25,6 +25,13 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/whatsapp.css">
+  <style>
+  /* Estilo para el desplazamiento suave */
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
 
 </head>
 
@@ -35,43 +42,42 @@
     <header class="header_section">
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container ">
-          <a class="navbar-brand" href="index.html">
-            <span>
-              Digian
-            </span>
-          </a>
+          <img style="margin-left: 10px;" class="navbar-logo" src="./images//download.png" alt="logo">
 
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button style="margin-right: 10px;" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class=""> </span>
           </button>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav  ">
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html"> Nosotros</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="service.html">Servicios</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contacto</a>
-              </li>
-            </ul>
-            <div class="quote_btn-container">
-              <a href="" class="quote_btn">
-                Presupuesto
-              </a>
-            </div>
+          <div style="width: 100%;">
+            <div style style="background-color: aqua; display: flex; flex-direction: row; justify-content: space-between; " class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav  ">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#inicio">Inicio <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#servicios">Servicios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#nosotros"> Nosotros</a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contacto">Contacto</a>
+                  </li>
+                </ul>
+                <div style="margin-right: 10px;" class="quote_btn-container">
+                  <a href="#contacto" class="quote_btn">
+                    Presupuesto
+                  </a>
+                </div>
+          </div>
           </div>
         </nav>
       </div>
     </header>
     <!-- end header section -->
     <!-- slider section -->
-    <section class="slider_section ">
+    <section  id="inicio" class="slider_section ">
       <div id="customCarousel1" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -79,7 +85,7 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="img-box">
-                    <img src="images/slider-img.png" alt="">
+                    <img src="images/fondo.png" alt="">
                   </div>
                 </div>
                 <div class="col-md-6">
@@ -105,7 +111,7 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="img-box">
-                    <img src="images/slider-img.png" alt="">
+                    <img src="images/fondo.png" alt="">
                   </div>
                 </div>
                 <div class="col-md-6">
@@ -131,7 +137,7 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="img-box">
-                    <img src="images/slider-img.png" alt="">
+                    <img src="images/fondo.png" alt="">
                   </div>
                 </div>
                 <div class="col-md-6">
@@ -140,7 +146,7 @@
                       Fletes Adrogué
                     </h1>
                     <p>
-                      Destacamos en Adrogué por brindar servicios de fletes sobresalientes. Cada envío refleja nuestra atención meticulosa, asegurando que sus pertenencias lleguen con la mejor calidad posible.
+                      Destacamos en Adrogué por brindar servicios de fletes sobresalientes. Cada envío refleja nuestra atención meticulosa, asegurando que sus pertenencias lleguen con la mejor calidad.
                     </p>
                     <div class="btn-box">
                       <a href="" class="btn1">
@@ -165,7 +171,7 @@
   </div>
 
   <!-- service section -->
-  <section class="service_section layout_padding">
+  <section id="servicios" class="service_section layout_padding">
     <div class="container">
       <div class="heading_container">
         <h2>
@@ -252,7 +258,7 @@
 
   <!-- about section -->
 
-  <section class="about_section layout_padding">
+  <section id="nosotros" class="about_section layout_padding">
     <div class="container  ">
       <div class="row">
         <div class="col-md-6">
@@ -263,8 +269,11 @@
               </h2>
             </div>
             <p>
-              En Fletes Adrogué, una empresa de mudanzas con 60 años de experiencia, destacamos por calidad y velocidad en nuestros servicios. No solo atendemos a particulares, sino también a empresas. Nuestro equipo experimentado garantiza
-               transiciones sin problemas, ofreciendo soluciones confiables y eficientes para cada mudanza.
+                Con una experiencia que abarca seis décadas, Fletes Adrogué destaca como un emblema en el transporte. 
+                Su legado de 60 años testimonia compromiso y excelencia. 
+                Todos Nuestros vehículos cuentan con su correspondiente habilitación garantizando seguridad y eficiencia en cada viaje. 
+                Además los conductores tienen años de experiencia en el rubro y conocimiento de las rutas que garantizan entregas impecables. 
+                Sumado a esto, en calidad de agencia de transportes habilitada, brindamos confiabilidad y tranquilidad en cada servicio.
             </p>
             <a href="">
               Contactanos
@@ -296,14 +305,14 @@
         <div class="col-md-6">
           <div class="box">
             <div class="img-box">
-              <img src="images/case-1.jpg" alt="">
+              <img src="images/mudanza.png" alt="">
             </div>
             <div class="detail-box">
               <h5>
-                Servicios dentro de buenos aires
+                Transportes dentro de buenos aires
               </h5>
               <p>
-                Alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+                    Nuestros vehiculos estan en condiciones de realizar cualquier mudanza, reparto o entrega en cualquier punto de Buenos Aires.
               </p>
             </div>
           </div>
@@ -311,14 +320,14 @@
         <div class="col-md-6">
           <div class="box">
             <div class="img-box">
-              <img src="images/case-2.jpg" alt="">
+              <img src="images/viaje.png" alt="">
             </div>
             <div class="detail-box">
               <h5>
-                Servicios al interior del país
+                transportes al interior del país
               </h5>
               <p>
-                Alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+                También contamos con vehiculos capaces de ofrecer cualquier tipo de tranporte de mercaderia dentro del territorio Argentino.
               </p>
               
             </div>
@@ -347,13 +356,13 @@
               <div class="col-md-10 mx-auto">
                 <div class="box">
                   <div class="img-box">
-                    <img src="images/client.jpg" alt="">
+                    <img src="images/client3.jpg" alt="">
                   </div>
                   <div class="detail-box">
                     <div class="client_info">
                       <div class="client_name">
                         <h5>
-                          Morojink
+                          Eduardo Almaraz
                         </h5>
                         <h6>
                           Customer
@@ -362,13 +371,7 @@
                       <i class="fa fa-quote-left" aria-hidden="true"></i>
                     </div>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                      labore
-                      et
-                      dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                      aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                      cillum
-                      dolore eu fugia
+                        Contraté Fletes Adrogué para mi mudanza y quedé impresionado. Eficientes, cuidadosos y puntuales. ¡Todo llegó en perfecto estado!
                     </p>
                   </div>
                 </div>
@@ -382,13 +385,13 @@
               <div class="col-md-10 mx-auto">
                 <div class="box">
                   <div class="img-box">
-                    <img src="images/client.jpg" alt="">
+                    <img src="images/client2.jpg" alt="">
                   </div>
                   <div class="detail-box">
                     <div class="client_info">
                       <div class="client_name">
                         <h5>
-                          Morojink
+                          Maria Asís
                         </h5>
                         <h6>
                           Customer
@@ -397,13 +400,7 @@
                       <i class="fa fa-quote-left" aria-hidden="true"></i>
                     </div>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                      labore
-                      et
-                      dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                      aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                      cillum
-                      dolore eu fugia
+                        El servicio de reparto de Fletes Adrogué superó mis expectativas. Rápidos y confiables, hacen que enviar paquetes sea sencillo y seguro.
                     </p>
                   </div>
                 </div>
@@ -417,13 +414,13 @@
               <div class="col-md-10 mx-auto">
                 <div class="box">
                   <div class="img-box">
-                    <img src="images/client.jpg" alt="">
+                    <img src="images/client1.jpg" alt="">
                   </div>
                   <div class="detail-box">
                     <div class="client_info">
                       <div class="client_name">
                         <h5>
-                          Morojink
+                          Marcos Boeiro
                         </h5>
                         <h6>
                           Customer
@@ -432,13 +429,7 @@
                       <i class="fa fa-quote-left" aria-hidden="true"></i>
                     </div>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                      labore
-                      et
-                      dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                      aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                      cillum
-                      dolore eu fugia
+                        Los viajes al interior con Fletes Adrogué son impecables. Conductor amable, vehículo cómodo y llegada a tiempo. ¡Una opción excelente!
                     </p>
                   </div>
                 </div>
@@ -460,7 +451,7 @@
 
   <!-- contact section -->
 
-  <section class="contact_section layout_padding">
+  <section id="contacto" class="contact_section layout_padding">
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-5 col-lg-4 offset-md-1">
@@ -470,21 +461,21 @@
                 Formulario de contacto
               </h2>
             </div>
-            <form action="">
+            <form id="miFormulario" action="">
               <div>
-                <input type="text" placeholder="Nombre completo" />
+                <input type="text" id="nombre" placeholder="Nombre completo" />
               </div>
               <div>
-                <input type="email" placeholder="Email" />
+                <input type="email" id="email" placeholder="Email" />
               </div>
               <div>
-                <input type="text" placeholder="Telefono" />
+                <input type="text" id="telefono" placeholder="Telefono" />
               </div>
               <div>
-                <input type="text" class="message-box" placeholder="Mensaje" />
+                <input type="text" id="mensaje" class="message-box" placeholder="Mensaje" />
               </div>
               <div class="d-flex ">
-                <button>
+                <button type="submit">
                   ENVIAR
                 </button>
               </div>
@@ -494,7 +485,7 @@
         <div class="col-md-6 col-lg-7 px-0">
           <div class="map_container">
             <div class="map">
-              <div id="googleMap"></div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3275.8537446086475!2d-58.41736782598271!3d-34.80962126839857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd375b6b5a99f%3A0xd9050dfd57915f37!2sFletes%20Adrogue!5e0!3m2!1sen!2sar!4v1693263524441!5m2!1sen!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
         </div>
@@ -516,7 +507,7 @@
                 Fletes Adorgué
               </h4>
               <p>
-                Necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful
+                Nuestro objetivo es brindar un servicio de calidad y asegurarnos de  que nuestros clientes queden stisfechos con el trabajo realizado.
               </p>
             </div>
           </div>
@@ -543,52 +534,50 @@
           </div>
           <div class="col-md-6 col-lg-3 ">
             <h4>
-              Subscribe
+              Subscribirse
             </h4>
+            <p>dejanos tu email si queres recibir nuestras ofertas</p>
             <form action="#">
-              <input type="text" placeholder="Enter email" />
+              <input style="margin-top: -20px !important;" type="text" placeholder="ingrese su email" />
               <button type="submit">
-                Subscribe
+                enviar
               </button>
             </form>
           </div>
           <div class="col-md-6 col-lg-3 mb-0 ml-auto">
             <div class="info_contact">
               <h4>
-                Address
+                Dirección
               </h4>
               <div class="contact_link_box">
                 <a href="">
                   <i class="fa fa-map-marker" aria-hidden="true"></i>
                   <span>
-                    Location
+                     Cap. de Fragata Moyano 97
                   </span>
                 </a>
                 <a href="">
                   <i class="fa fa-phone" aria-hidden="true"></i>
                   <span>
-                    Call +01 1234567890
+                    11 45659043
                   </span>
                 </a>
                 <a href="">
                   <i class="fa fa-envelope" aria-hidden="true"></i>
                   <span>
-                    demo@gmail.com
+                    Fletesadrogue@hotmail.com
                   </span>
                 </a>
               </div>
             </div>
             <div class="info_social">
-              <a href="">
+              <a href="https://www.facebook.com/profile.php?id=100086642195527&mibextid=2JQ9oc">
                 <i class="fa fa-facebook" aria-hidden="true"></i>
               </a>
               <a href="">
-                <i class="fa fa-twitter" aria-hidden="true"></i>
+                <i class="fa fa-whatsapp" aria-hidden="true"></i>
               </a>
-              <a href="">
-                <i class="fa fa-linkedin" aria-hidden="true"></i>
-              </a>
-              <a href="">
+              <a href="https://www.instagram.com/fletesadrogue/?igshid=MzRlODBiNWFlZA%3D%3D">
                 <i class="fa fa-instagram" aria-hidden="true"></i>
               </a>
             </div>
@@ -598,13 +587,15 @@
     </section>
 
     <!-- end info section -->
-
+    <a href="https://api.whatsapp.com/send?phone=+5491145659043&text=Hola%20Fletes%20Adrogué%20me%20Gustaría%20saber%20sobre..." class="float" target="_blank">
+        <i class="fa fa-whatsapp my-float"></i>
+    </a>
     <!-- footer section -->
     <footer class="footer_section">
       <div class="container">
         <p>
-          &copy; <span id="displayYear"></span> All Rights Reserved By
-          <a href="https://html.design/">Free Html Templates</a>
+           <span id="displayYear">Fletes Adrodué</span> 
+          <a href="https://html.design/">calidad y confianza</a>
         </p>
       </div>
     </footer>
@@ -613,16 +604,19 @@
 
   <!-- jQery -->
   <script src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+  <script src="./js//contact.js"></script>
   <!-- popper js -->
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
   </script>
   <!-- bootstrap js -->
   <script src="js/bootstrap.js"></script>
   <script src="js/custom.js"></script>
-  <!-- Google Map -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
-  <!-- End Google Map -->
-
+  <!-- sweetAlert -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!--end SweetAlert -->
 </body>
 
 </html>

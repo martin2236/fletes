@@ -6,6 +6,12 @@ body {
   overflow-x: hidden;
 }
 
+.navbar-logo{
+    height:45px;
+    width:80px;
+    border-radius: 5px;
+}
+
 .layout_padding {
   padding: 90px 0;
 }
@@ -241,18 +247,18 @@ a:focus {
 }
 
 .quote_btn-container a:hover {
-  color: #f8842b;
+  color: #68a4dc;
 }
 
 .quote_btn-container .quote_btn {
   display: inline-block;
   padding: 5px 25px;
-  background-color: #f8842b;
+  background-color: #68a4dc;
   color: #ffffff;
   border-radius: 5px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  border: 1px solid #f8842b;
+  border: 1px solid #68a4dc;
 }
 
 .quote_btn-container .quote_btn:hover {
@@ -358,7 +364,7 @@ a:focus {
 .slider_section .carousel-indicators li.active {
   width: 23px;
   height: 23px;
-  background-color: #f8842b;
+  background-color: #68a4dc;
 }
 
 .service_section {
@@ -501,12 +507,12 @@ a:focus {
 .about_section .detail-box a {
   display: inline-block;
   padding: 10px 45px;
-  background-color: #f8842b;
+  background-color: #68a4dc;
   color: #ffffff;
   border-radius: 5px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  border: 1px solid #f8842b;
+  border: 1px solid #68a4dc;
   margin-top: 15px;
 }
 
@@ -640,7 +646,7 @@ a:focus {
 .client_section .carousel-indicators li.active {
   width: 20px;
   height: 20px;
-  background-color: #f8842b;
+  background-color: #68a4dc;
 }
 
 .contact_section {
@@ -751,7 +757,7 @@ a:focus {
 }
 
 .info_section .info_contact .contact_link_box a:hover {
-  color: #f8842b;
+  color: #68a4dc;
 }
 
 .info_section .info_social {
@@ -778,7 +784,7 @@ a:focus {
 }
 
 .info_section .info_social a:hover {
-  color: #f8842b;
+  color: #68a4dc;
 }
 
 .info_section .info_links {
@@ -805,7 +811,7 @@ a:focus {
 }
 
 .info_section .info_links a:hover {
-  color: #f8842b;
+  color: #68a4dc;
 }
 
 .info_section form input {
@@ -839,12 +845,12 @@ a:focus {
   text-align: center;
   display: inline-block;
   padding: 10px 55px;
-  background-color: #f8842b;
+  background-color: #68a4dc;
   color: #ffffff;
   border-radius: 0;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  border: 1px solid #f8842b;
+  border: 1px solid #68a4dc;
   margin-top: 15px;
 }
 
@@ -869,4 +875,17 @@ a:focus {
 .footer_section p a {
   color: inherit;
 }
+
+.custom_nav-container .navbar-collapse {
+    background-color: red; /* Ajusta el color de fondo según tu diseño */
+  }
+.custom_nav-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: red; /* Ajusta el color de fondo según tu diseño */
+    z-index: 2000; /* Ajusta el valor si es necesario */
+  }
 /*# sourceMappingURL=style.css.map */
