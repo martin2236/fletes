@@ -39,51 +39,626 @@
     </style>
   </head>
   <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+
+
+    <div class="hero_area">
+      <!-- header section strats -->
+      <header class="header_section">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container ">
+            <a class="navbar-brand" href="index.html">
+              <span>
+                Digian
+              </span>
+            </a>
+  
+  
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class=""> </span>
+            </button>
+  
+  
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav  ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html"> Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="service.html">Servicios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contacto</a>
+                </li>
+              </ul>
+              <div class="quote_btn-container">
+                <a href="" class="quote_btn">
+                  Presupuesto
+                </a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- end header section -->
+      <!-- slider section -->
+      <section class="slider_section ">
+        <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="container ">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="img-box">
+                      <img src="images/fondo.png" alt="">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="detail-box">
+                      <h1>
+                        Fletes Adrodué
+                      </h1>
+                      <p>
+                        Con más de 60 años en Adrogué, somos un referente en fletes. Nuestra historia refleja experiencia y confiabilidad, siendo una opción confiable en el transporte local.
+                      </p>
+                      <div class="btn-box">
+                        <a href="" class="btn1">
+                          Contactanos
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <div class="container ">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="img-box">
+                      <img src="images/slider-img.png" alt="">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="detail-box">
+                      <h1>
+                        Fletes Adrodué
+                      </h1>
+                      <p>
+                        Nuestro equipo en Adrogué está compuesto por profesionales excepcionales. Su dedicación garantiza entregas seguras y eficientes, asegurando un servicio de fletes de calidad.
+                      </p>
+                      <div class="btn-box">
+                        <a href="" class="btn1">
+                          Contactanos
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <div class="container ">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="img-box">
+                      <img src="images/slider-img.png" alt="">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="detail-box">
+                      <h1>
+                        Fletes Adrogué
+                      </h1>
+                      <p>
+                        Destacamos en Adrogué por brindar servicios de fletes sobresalientes. Cada envío refleja nuestra atención meticulosa, asegurando que sus pertenencias lleguen con la mejor calidad posible.
+                      </p>
+                      <div class="btn-box">
+                        <a href="" class="btn1">
+                          Contacnos
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="carousel-indicators">
+            <li data-target="#customCarousel1" data-slide-to="0" class="active"></li>
+            <li data-target="#customCarousel1" data-slide-to="1"></li>
+            <li data-target="#customCarousel1" data-slide-to="2"></li>
+          </ol>
+        </div>
+  
+  
+      </section>
+      <!-- end slider section -->
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
-
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
+  
+  
+    <!-- service section -->
+    <section class="service_section layout_padding">
+      <div class="container">
+        <div class="heading_container">
+          <h2>
+            Nuestros servicios
+          </h2>
+          <p>
+            Estos son algunos de nuestros servicios que te podemos ofrecer para que tu experiencia se los mas fácil posible.
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-3">
+            <div class="box">
+              <div class="img-box">
+                <img src="images/s1.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Logistica
+                </h5>
+                <p>
+                  Nuestro servicio de logistica evalua la ruta mas eficiente para cualquier reparto.
+                </p>
+               
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="box">
+              <div class="img-box">
+                <img src="images/s2.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  mudanzas
+                </h5>
+                <p>
+                  Nuestros profecionales ofrecen un servicio de mudanza sin igual.
+                </p>
+               
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="box">
+              <div class="img-box">
+                <img src="images/s3.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Viajes al interior
+                </h5>
+                <p>
+                  Hacemos viajes a cualquier punto del país de forma rápida y segura.
+                </p>
+               
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="box">
+              <div class="img-box">
+                <img src="images/s4.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Fletes express
+                </h5>
+                <p>
+                  Contamos con vehiculos capaces de hacer envios de forma veloz.
+                </p>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btn-box">
+          <a href="">
+            Conocer más
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- end service section -->
+  
+  
+    <!-- about section -->
+  
+  
+    <section class="about_section layout_padding">
+      <div class="container  ">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="detail-box">
+              <div class="heading_container">
+                <h2>
+                  Nosotros
+                </h2>
+              </div>
+              <p>
+                En Fletes Adrogué, una empresa de mudanzas con 60 años de experiencia, destacamos por calidad y velocidad en nuestros servicios. No solo atendemos a particulares, sino también a empresas. Nuestro equipo experimentado garantiza
+                 transiciones sin problemas, ofreciendo soluciones confiables y eficientes para cada mudanza.
+              </p>
+              <a href="">
+                Contactanos
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6 ">
+            <div class="img-box">
+              <img src="images/about-img.png" alt="">
+            </div>
+          </div>
+  
+  
+        </div>
+      </div>
+    </section>
+  
+  
+    <!-- end about section -->
+  
+  
+    <!-- case section -->
+  
+  
+    <section class="case_section layout_padding">
+      <div class="container">
+        <div class="heading_container">
+          <h2>
+            Servicios destacados
+          </h2>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="box">
+              <div class="img-box">
+                <img src="images/mudanza.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Servicios dentro de buenos aires
+                </h5>
+                <p>
+                  Alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="box">
+              <div class="img-box">
+                <img src="images/viaje.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Servicios al interior del país
+                </h5>
+                <p>
+                  Alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+                </p>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+  
+    <!-- end case section -->
+  
+  
+    <!-- client section -->
+    <section class="client_section ">
+      <div class="container">
+        <div class="heading_container heading_center">
+          <h2>
+            Testimonios
+          </h2>
+        </div>
+      </div>
+      <div id="customCarousel2" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-10 mx-auto">
+                  <div class="box">
+                    <div class="img-box">
+                      <img src="images/client.jpg" alt="">
+                    </div>
+                    <div class="detail-box">
+                      <div class="client_info">
+                        <div class="client_name">
+                          <h5>
+                            Morojink
+                          </h5>
+                          <h6>
+                            Customer
+                          </h6>
+                        </div>
+                        <i class="fa fa-quote-left" aria-hidden="true"></i>
+                      </div>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum
+                        dolore eu fugia
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-10 mx-auto">
+                  <div class="box">
+                    <div class="img-box">
+                      <img src="images/client.jpg" alt="">
+                    </div>
+                    <div class="detail-box">
+                      <div class="client_info">
+                        <div class="client_name">
+                          <h5>
+                            Morojink
+                          </h5>
+                          <h6>
+                            Customer
+                          </h6>
+                        </div>
+                        <i class="fa fa-quote-left" aria-hidden="true"></i>
+                      </div>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum
+                        dolore eu fugia
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-10 mx-auto">
+                  <div class="box">
+                    <div class="img-box">
+                      <img src="images/client.jpg" alt="">
+                    </div>
+                    <div class="detail-box">
+                      <div class="client_info">
+                        <div class="client_name">
+                          <h5>
+                            Morojink
+                          </h5>
+                          <h6>
+                            Customer
+                          </h6>
+                        </div>
+                        <i class="fa fa-quote-left" aria-hidden="true"></i>
+                      </div>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum
+                        dolore eu fugia
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ol class="carousel-indicators">
+          <li data-target="#customCarousel2" data-slide-to="0" class="active"></li>
+          <li data-target="#customCarousel2" data-slide-to="1"></li>
+          <li data-target="#customCarousel2" data-slide-to="2"></li>
+        </ol>
+      </div>
+    </section>
+    <!-- end client section -->
+  
+  
+  
+  
+  
+  
+    <!-- contact section -->
+  
+  
+    <section class="contact_section layout_padding">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-5 col-lg-4 offset-md-1">
+            <div class="form_container">
+              <div class="heading_container">
+                <h2>
+                  Formulario de contacto
+                </h2>
+              </div>
+              <form action="">
+                <div>
+                  <input type="text" id="nombre" placeholder="Nombre completo" />
+                </div>
+                <div>
+                  <input type="email" id="email" placeholder="Email" />
+                </div>
+                <div>
+                  <input type="text" id="telefono" placeholder="Telefono" />
+                </div>
+                <div>
+                  <input type="text" id="mensaje" class="message-box" placeholder="Mensaje" />
+                </div>
+                <div class="d-flex ">
+                  <button type="submit">
+                    ENVIAR
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-7 px-0">
+            <div class="map_container">
+              <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3275.853568445803!2d-58.41479289999999!3d-34.809625700000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd375b6b5a99f%3A0xd9050dfd57915f37!2sFletes%20Adrogue!5e0!3m2!1sen!2sar!4v1693512173556!5m2!1sen!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+  
+    <!-- end contact section -->
+  
+  
+    <div class="footer_container">
+      <!-- info section -->
+  
+  
+      <section class="info_section ">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-lg-3 ">
+              <div class="info_detail">
+                <h4>
+                  Fletes Adorgué
+                </h4>
+                <p>
+                  Necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-2 mx-auto">
+              <div class="info_link_box">
+                <h4>
+                  Links
+                </h4>
+                <div class="info_links">
+                  <a class="" href="#inicio">
+                    Inicio
+                  </a>
+                  <a class="" href="#nosotros">
+                    Nosotros
+                  </a>
+                  <a class="" href="#servicios">
+                    Servicios
+                  </a>
+                  <a class="" href="#contacto">
+                    Contacto
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 ">
+              <h4>
+                Subscribirse
+              </h4>
+              <form action="#">
+                <input type="text" placeholder="Enter email" />
+                <button type="submit">
+                  Subscribirse
+                </button>
+              </form>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-0 ml-auto">
+              <div class="info_contact">
+                <h4>
+                  Address
+                </h4>
+                <div class="contact_link_box">
+                  <a href="">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <span>
+                      Location
+                    </span>
+                  </a>
+                  <a href="">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <span>
+                      Call +01 1234567890
+                    </span>
+                  </a>
+                  <a href="">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <span>
+                      demo@gmail.com
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <div class="info_social">
+                <a href="https://www.facebook.com/profile.php?id=100086642195527&mibextid=2JQ9oc">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a href="">
+                  <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.instagram.com/fletesadrogue/?igshid=MzRlODBiNWFlZA%3D%3D">
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+  
+      <!-- end info section -->
+  
+  
+      <!-- footer section -->
+      <footer class="footer_section">
+        <div class="container">
+          <p>
+            &copy; <span id="displayYear"></span> Fletes Adrogué
+            <a href="https://html.design/">confianza y calidad</a>
+          </p>
+        </div>
+      </footer>
+      <a href="https://api.whatsapp.com/send?phone=+5491145659043&text=Hola%20Fletes%20Adrogué%20queria%20averiguar%20sobre%20el%20servicio%20de..." class="float" target="_blank">
+        <i class="fa fa-whatsapp my-float"></i>
+        </a>
+      <!-- footer section -->
+    </div>
+  
+  
+    <!-- jQery -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- popper js -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
     </script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.js"></script>
+    <script src="js/custom.js"></script>
+    <!-- Google Map -->
+    <script src="./js//contact.js"></script>
+    <!-- End Google Map -->
+    <script src="sweetalert2.all.min.js"></script>
+  
   </body>
+  
+  
+  
 </html>
